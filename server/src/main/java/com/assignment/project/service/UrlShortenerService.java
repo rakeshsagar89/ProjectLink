@@ -16,7 +16,7 @@ public class UrlShortenerService {
     @Autowired
     private ShortUrlRepository repository;
 
-    private static final int EXPIRY_MINUTES = 1;
+    private static final int EXPIRY_MINUTES = 5;
 
     public String shortenUrl(String originalUrl) {
         if (!isValidUrl(originalUrl)) {
